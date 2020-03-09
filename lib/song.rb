@@ -50,7 +50,7 @@ class Song
     parts = filename.split(" - ")
     song = self.new
     song.name = parts[1].gsub(/.mp3/)
-    
+    binding.pry
     song.artist_name = parts[0]
     song.save
     song
