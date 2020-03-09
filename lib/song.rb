@@ -55,7 +55,6 @@ class Song
     song.artist_name = parts[0]
     song.save
     song
-    binding.pry
   end
 
   def self.destroy_all
