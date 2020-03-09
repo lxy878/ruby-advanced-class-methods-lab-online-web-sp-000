@@ -33,7 +33,6 @@ class Song
     if song == nil
       song = self.create_by_name(name)
     end
-    # binding.pry
     song
   end
   def self.alphabetical
