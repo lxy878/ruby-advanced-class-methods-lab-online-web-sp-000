@@ -39,11 +39,11 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    song = self.new
-    parts = filename.gsub(/\.mp3/).split(" - ")
-    song.name = parts[1]
-    song.artist_name = parts[0]
-    song
+    # song = self.new
+    # parts = filename.gsub(/\.mp3/).split(" - ")
+    # song.name = parts[1]
+    # song.artist_name = parts[0]
+    # song
   end
 
   def self.create_from_filename(filename)
