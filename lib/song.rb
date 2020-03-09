@@ -40,8 +40,7 @@ class Song
 
   def self.new_from_filename(filename)
     song = self.new
-    fixed = filename.gsub(/\.mp3/)
-    parts = fixed.split(" - ")
+    parts = filenam.split(" - ")
     song.name = parts[1]
     song.artist_name = parts[0]
     song
