@@ -41,6 +41,8 @@ class Song
     song.artist_name = parts[0]
     song
   end
+
+  def self.create_from_filename()
   def self.all
     @@all
   end
