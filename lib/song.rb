@@ -50,11 +50,11 @@ class Song
     song = self.new
     fixed_filename = filename.gsub(/\.mp3/)
     parts = fixed_filename.split(" - ")
-    
     song.name = parts[1]
     song.artist_name = parts[0]
     song.save
     song
+    binding.pry
   end
 
   def self.destroy_all
