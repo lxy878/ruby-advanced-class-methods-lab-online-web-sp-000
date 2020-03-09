@@ -49,7 +49,7 @@ class Song
   def self.create_from_filename(filename)
     song = self.new
     # binding.pry
-    parts = fixed_filename.split(" - ")
+    parts = filename.split(" - ")
     song.name = parts[1]
     song.artist_name = parts[0]
     song.save
