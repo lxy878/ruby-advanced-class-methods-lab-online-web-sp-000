@@ -16,9 +16,15 @@ class Song
     song.name = name
     song.save
   end
+
+  def self.find_by_name(name)
+    self.all.find {|song| song.name == name}
+  end
   def self.all
     @@all
   end
+
+
 
   def save
     self.class.all << self
